@@ -145,20 +145,13 @@ function validarId  (lista, inputid) {
   let resultado = lista.some(elemento => elemento.id == inputid) 
   return resultado
 
-
-
-
-
-
-
-
 }
 
-function addNewTask (event) {
+div.addEventListener("sumbit", e => {
+let resultado = input.value()
+alert(resultado)
+}) 
 
-
-
-}
 
 
 function devolverNombre (objetos) {
