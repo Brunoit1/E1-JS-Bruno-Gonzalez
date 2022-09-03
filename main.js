@@ -118,3 +118,59 @@ const imprimirPreciosynombres = () =>
 // imprimirPreciosynombres()
 
 
+const div = document.getElementById("div1")
+
+const nombre = document.getElementById("Nombre")
+
+const precio = document.getElementById("Precio")
+
+const input = document.getElementById("Input")
+
+const boton = document.getElementById("Boton")
+
+
+
+div.addEventListener("sumbit", obtenerInformacion )
+
+
+function obtenerInformacion () {
+
+ let 
+
+}
+
+
+function validarId  (lista, inputid) {
+
+  let resultado = lista.some(elemento => elemento.id == inputid) 
+  return resultado
+
+
+
+
+
+
+
+
+}
+
+function addNewTask (event) {
+
+
+
+}
+
+
+function devolverNombre (objetos) {
+ 
+  return objetos.nombre
+
+}
+
+function devolverPrecio (objetos) {
+
+  return objetos.precio
+
+}
+
+
