@@ -129,28 +129,57 @@ const input = document.getElementById("Input")
 const boton = document.getElementById("Boton")
 
 
+console.log(boton)
 
-div.addEventListener("sumbit", obtenerInformacion )
+let objetocaputarado = input.value
+console.log(objetocaputarado)
 
 
-function obtenerInformacion () {
+// Validamos si la pizza se encuentra en nuestra lista a traves del Id 
+// Si la pizza fue encontrada completamos los campos de nombre y precio en el html
 
- let 
+let obtenerInformacion = e => {
+  
 
-}
+  let valor = validarId(pizzas, objetocaputarado)
 
+    if (!valor){
+      alert("No existe el Id de la Pizza")
+      return
+  
+    }
+    
+
+
+    let objetos = pizzas.find(variable => variable.id == Number(objetocaputarado))
+
+    let nombre1 = objetos.nombre;
+    let precio1 = objetos.precio;
+ 
+
+      nombre.innerHTML = nombre1
+
+      precio.innerHTML = precio1
+ 
+
+} 
+
+ let objetos = pizzas.find(e => e.id == Number(5))
+
+ console.log(`${objetos.nombre} ${objetos.precio}` )
+
+
+
+
+//  pre: Pasamos por parametros una lista y el valor de un id
+//  pos: Verificamos que el valor de el idea se encuentre dentro de los valores de la lista y devolvemos un booleano
 
 function validarId  (lista, inputid) {
 
-  let resultado = lista.some(elemento => elemento.id == inputid) 
+  let resultado = lista.some(elemento => elemento.id == Number(inputid)) 
   return resultado
 
 }
-
-div.addEventListener("sumbit", e => {
-let resultado = input.value()
-alert(resultado)
-}) 
 
 
 
@@ -166,4 +195,4 @@ function devolverPrecio (objetos) {
 
 }
 
-
+div.addEventListener("submit", obtenerInformacion ) ;
