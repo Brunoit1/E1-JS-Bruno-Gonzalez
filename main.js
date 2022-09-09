@@ -129,20 +129,17 @@ const input = document.getElementById("Input")
 const boton = document.getElementById("Boton")
 
 
-console.log(boton)
 
-let objetocaputarado = input.value
-console.log(objetocaputarado)
 
 
 // Validamos si la pizza se encuentra en nuestra lista a traves del Id 
 // Si la pizza fue encontrada completamos los campos de nombre y precio en el html
 
 let obtenerInformacion = e => {
-  
-
-  let valor = validarId(pizzas, objetocaputarado)
-
+  e.preventDefault();
+  let objetocapturado = input.value
+    let valor = validarId(objetocapturado)
+    
     if (!valor){
       alert("No existe el Id de la Pizza")
       return
@@ -151,48 +148,28 @@ let obtenerInformacion = e => {
     
 
 
-    let objetos = pizzas.find(variable => variable.id == Number(objetocaputarado))
+    let objetos = pizzas.find(variable => variable.id == Number(objetocapturado))
 
-    let nombre1 = objetos.nombre;
-    let precio1 = objetos.precio;
- 
 
-      nombre.innerHTML = nombre1
+    nombre.innerHTML = `pizza : ${objetos.nombre}`;
 
-      precio.innerHTML = precio1
+    precio.innerHTML = `Precio :${objetos.precio}`;
  
 
 } 
-
- let objetos = pizzas.find(e => e.id == Number(5))
-
- console.log(`${objetos.nombre} ${objetos.precio}` )
-
 
 
 
 //  pre: Pasamos por parametros una lista y el valor de un id
 //  pos: Verificamos que el valor de el idea se encuentre dentro de los valores de la lista y devolvemos un booleano
 
-function validarId  (lista, inputid) {
+function validarId  ( inputid) {
 
-  let resultado = lista.some(elemento => elemento.id == Number(inputid)) 
+  let resultado = pizzas.some(elemento => elemento.id == Number(inputid)) 
   return resultado
 
 }
 
 
-
-function devolverNombre (objetos) {
- 
-  return objetos.nombre
-
-}
-
-function devolverPrecio (objetos) {
-
-  return objetos.precio
-
-}
 
 div.addEventListener("submit", obtenerInformacion ) ;
