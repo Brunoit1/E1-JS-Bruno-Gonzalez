@@ -5,7 +5,7 @@ const pizzas = [
     nombre:"Mozarella",
     ingredientes: ["queso mozarella", "prepizza", "salsa"], 
     precio:500,
-    img:'./imagen/muzzarella.jpg'
+    img:'./img/mozarella.jfif'
 
     },
 
@@ -14,7 +14,7 @@ const pizzas = [
         nombre:"Napolitana",
         ingredientes: ["queso mozarella", "prepizza", "salsa", "tomates", "hojas de albahaca", "aceite de oliva"], 
         precio:1000,
-        img:'./imagen/napolitana.jpg'
+        img:'./img/napolitana.jfif'
     
     },
 
@@ -22,8 +22,8 @@ const pizzas = [
         id:3,
         nombre:"Pepperoni",
         ingredientes: ["queso mozarella", "prepizza", "salsa", "pepperoni"], 
-        precio:8000,
-        img:'./imagen/pepperoni.webp'
+        precio:800,
+        img:'./img/pepperoni.jfif'
     
 
     },
@@ -33,7 +33,7 @@ const pizzas = [
         nombre:"Paisana",
         ingredientes: ["queso mozarella", "prepizza", "salsa", "papas fritas", "huevos fritos","jamon"], 
         precio:1200,
-        img: './imagen/paizana.jpg'
+        img: './img/paisana.jfif'
     
     },
 
@@ -42,7 +42,7 @@ const pizzas = [
         nombre:"Fugazzeta",
         ingredientes: ["queso mozarella", "prepizza", "salsa", "cebolla", "oregano"], 
         precio:700,
-        img: './imagen/fugazzera.jpg'
+        img: './img/fugazzeta.jfif'
 
     
     },
@@ -52,7 +52,7 @@ const pizzas = [
         nombre:"Margarita",
         ingredientes: ["queso mozarella", "prepizza", "salsa", "hojas de albahaca", "oregano", "aceite de oliva"], 
         precio:1000,
-        img: './imagen/nargarita.jpg'
+        img: './img/margarita.jfif'
     },
 
     {
@@ -60,7 +60,7 @@ const pizzas = [
         nombre:"Cuatro quesos",
         ingredientes: ["queso mozarella", "prepizza", "salsa", "queso fontina", "queso gorgonzola", "queso parmesano"], 
         precio:950,
-        img: './imagen/4quesos.jpg'
+        img: './img/4quesos.jfif'
     },
 
 ]
